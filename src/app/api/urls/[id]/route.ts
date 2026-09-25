@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
 import { db } from "@/server/db";
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+// import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/server/auth";
 
 export async function DELETE(
   req: Request,
